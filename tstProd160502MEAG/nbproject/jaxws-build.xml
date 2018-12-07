@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><!--
+        *** GENERATED FROM jax-ws.xml - DO NOT EDIT !                             ***
+        *** TO MODIFY wsimport options USE Web Service node -> Edit WS Attributes ***
+        *** TO CHANGE TARGETS GENERATED TO jaxws-build.xml COPY THOSE             ***
+        *** TARGETS TO ../build.xml AND MODIFY THAT FILE INSTEAD                  ***
+
+        --><project xmlns:xalan="http://xml.apache.org/xslt" xmlns:j2seproject3="http://www.netbeans.org/ns/j2se-project/3" xmlns:jaxws="http://www.netbeans.org/ns/jax-ws/1">
+    <!--
+                ===================
+                JAX-WS WSIMPORT SECTION
+                ===================
+            -->
+    <target name="wsimport-init" depends="init">
+        <mkdir dir="${build.generated.sources.dir}/jax-ws"/>
+        <taskdef name="wsimport" classname="com.sun.tools.ws.ant.WsImport">
+            <classpath path="${libs.jaxws21.classpath}"/>
+        </taskdef>
+    </target>
+    <target name="wsimport-client-WSProduct" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/WSProduct"/>
+        <property name="wsdl-WSProduct" location="xml-resources/web-service-references/WSProduct/wsdl/148.205.133.192_38798/EApp160502MEAG-war/WSProduct.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/WSProduct" destdir="${build.generated.dir}/jax-wsCache/WSProduct" wsdl="${wsdl-WSProduct}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://148.205.133.192:38798/EApp160502MEAG-war/WSProduct?WSDL" xnocompile="true" xendorsed="true" package="product">
+            <depends file="${wsdl-WSProduct}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/WSProduct"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/WSProduct">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-WSProduct" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/WSProduct"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/product"/>
+    </target>
+    <target name="wsimport-client-WSManufacturer" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/WSManufacturer"/>
+        <property name="wsdl-WSManufacturer" location="xml-resources/web-service-references/WSManufacturer/wsdl/148.205.133.192_38798/EApp160502MEAG-war/WSManufacturer.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/WSManufacturer" destdir="${build.generated.dir}/jax-wsCache/WSManufacturer" wsdl="${wsdl-WSManufacturer}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://148.205.133.192:38798/EApp160502MEAG-war/WSManufacturer?WSDL" xnocompile="true" xendorsed="true" package="man">
+            <depends file="${wsdl-WSManufacturer}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/WSManufacturer"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/WSManufacturer">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-WSManufacturer" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/WSManufacturer"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/man"/>
+    </target>
+    <target name="wsimport-client-WSProdCode" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/WSProdCode"/>
+        <property name="wsdl-WSProdCode" location="xml-resources/web-service-references/WSProdCode/wsdl/148.205.133.192_38798/EApp160502MEAG-war/WSProdCode.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/WSProdCode" destdir="${build.generated.dir}/jax-wsCache/WSProdCode" wsdl="${wsdl-WSProdCode}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://148.205.133.192:38798/EApp160502MEAG-war/WSProdCode?WSDL" xnocompile="true" xendorsed="true" package="prodCode">
+            <depends file="${wsdl-WSProdCode}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/WSProdCode"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/WSProdCode">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-WSProdCode" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/WSProdCode"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/prodCode"/>
+    </target>
+    <target name="wsimport-client-generate" depends="wsimport-client-WSProduct, wsimport-client-WSManufacturer, wsimport-client-WSProdCode"/>
+</project>

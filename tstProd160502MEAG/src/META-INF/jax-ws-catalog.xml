@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://148.205.133.192:38798/EApp160502MEAG-war/WSProduct?WSDL" uri="wsdl/148.205.133.192_38798/EApp160502MEAG-war/WSProduct.wsdl"/>
+    <system systemId="http://148.205.133.192:38798/EApp160502MEAG-war/WSProduct?xsd=1" uri="wsdl/148.205.133.192_38798/EApp160502MEAG-war/WSProduct.xsd_1.xsd"/>
+    <system systemId="http://148.205.133.192:38798/EApp160502MEAG-war/WSManufacturer?WSDL" uri="wsdl/148.205.133.192_38798/EApp160502MEAG-war/WSManufacturer.wsdl"/>
+    <system systemId="http://148.205.133.192:38798/EApp160502MEAG-war/WSManufacturer?xsd=1" uri="wsdl/148.205.133.192_38798/EApp160502MEAG-war/WSManufacturer.xsd_1.xsd"/>
+    <system systemId="http://148.205.133.192:38798/EApp160502MEAG-war/WSProdCode?WSDL" uri="wsdl/148.205.133.192_38798/EApp160502MEAG-war/WSProdCode.wsdl"/>
+    <system systemId="http://148.205.133.192:38798/EApp160502MEAG-war/WSProdCode?xsd=1" uri="wsdl/148.205.133.192_38798/EApp160502MEAG-war/WSProdCode.xsd_1.xsd"/>
+</catalog>
